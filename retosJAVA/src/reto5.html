@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Verificar selección</title>
+    <link rel="stylesheet" type="text/css" href="css/reto5.css">
+    <script src="js/reto5.js"></script>
+
+</head>
+<body>
+    <h1>Verificar selección</h1>
+
+    <form id="verificarForm" onsubmit="verificarSeleccion(); return false;">
+        <label for="nombre">Nombre:</label>
+        <select id="nombre" required>
+            <option value="">Seleccionar nombre...</option>
+            <option value="Nombre1">Nombre1</option>
+            <option value="Nombre2">Nombre2</option>
+            <option value="Nombre3">Nombre3</option>
+            <!-- Agrega más nombres aquí -->
+        </select>
+        <br><br>
+
+        <label for="apellido">Apellido:</label>
+        <select id="apellido" required>
+            <option value="">Seleccionar apellido...</option>
+            <option value="Apellido1">Apellido1</option>
+            <option value="Apellido2">Apellido2</option>
+            <option value="Apellido3">Apellido3</option>
+            <!-- Agrega más apellidos aquí -->
+        </select>
+        <br><br>
+
+        <label for="actividad">Actividad:</label>
+        <select id="actividad" required>
+            <option value="">Seleccionar actividad...</option>
+            <option value="Actividad1">Actividad1</option>
+            <option value="Actividad2">Actividad2</option>
+            <option value="Actividad3">Actividad3</option>
+            <!-- Agrega más actividades aquí -->
+        </select>
+        <br><br>
+
+        <input type="submit" value="Verificar">
+    </form>
+</body>
+</html>

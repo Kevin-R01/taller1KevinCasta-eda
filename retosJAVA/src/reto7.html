@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registro de Usuario</title>
+  <link rel="stylesheet" type="text/css" href="css/reto7.css">
+  <script src="js/reto7.js"></script>
+
+</head>
+<body>
+  <h1>Registro de Usuario</h1>
+  <form id="registration-form">
+    <div>
+      <label for="tipo-documento">Tipo de documento:</label>
+      <select id="tipo-documento" required>
+        <option value="">Seleccione...</option>
+        <option value="cc">Cédula de Ciudadanía</option>
+        <option value="ti">Tarjeta de Identidad</option>
+        <option value="ce">Cédula de Extranjería</option>
+      </select>
+    </div>
+    <div>
+      <label for="no-documento">No. Documento:</label>
+      <input type="text" id="no-documento" minlength="5" pattern="[0-9]+" required>
+    </div>
+    <div>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" pattern="[A-Za-z0-9\s]+" required>
+    </div>
+    <div>
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" pattern="[A-Za-z0-9\s]+" required>
+    </div>
+    <div>
+      <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+      <input type="date" id="fecha-nacimiento" required>
+    </div>
+    <div>
+      <label for="correo">Correo Electrónico:</label>
+      <input type="text" id="correo" pattern=".+@misena\.edu\.co" required>
+    </div>
+    <div>
+      <label for="password">Contraseña:</label>
+      <input type="password" id="password" minlength="10" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).+" required>
+    </div>
+    <div>
+      <label for="confirmar-password">Confirmar Contraseña:</label>
+      <input type="password" id="confirmar-password" required>
+    </div>
+    <div>
+      <input type="checkbox" id="aceptar-terminos" required>
+      <label for="aceptar-terminos">Acepto los Términos de Uso</label>
+    </div>
+    <button type="submit">Registrarse</button>
+  </form>
+  
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Términos de Uso</h2>
+      <p>Aquí se muestran los términos de uso.</p>
+    </div>
+  </div>
+
+</body>
+</html>

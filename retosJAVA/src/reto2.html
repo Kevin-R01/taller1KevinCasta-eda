@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Eventos</title>
+  <script src="js/reto2.js"></script>
+  <link rel="stylesheet" href="css/reto2.css">
+</head>
+<body>
+  <h1>Tipos de Eventos</h1>
+  <p>A continuación se muestran algunos ejemplos de eventos y sus descripciones:</p>
+  
+  
+  <table>
+    <thead>
+      <tr>
+        <th>Eventos</th>
+        <th>Ejemplo del Evento</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>click</td>
+        <td><button onclick="handleClick()">Haz clic aquí</button></td>
+      </tr>
+      <tr>
+        <td>mouseover</td>
+        <td><div onmouseover="handleMouseOver()">Pasa el mouse aquí</div></td>
+      </tr>
+      <tr>
+        <td>keydown</td>
+        <td><input type="text" onkeydown="handleKeyDown()" /></td>
+      </tr>
+      <tr>
+        <td>keyup</td>
+        <td><input type="text" onkeyup="handleKeyUp()" /></td>
+      </tr>
+      <tr>
+        <td>submit</td>
+        <td>
+          <form onsubmit="handleSubmit(event)">
+            <input type="submit" value="Enviar" />
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td>focus</td>
+        <td><input type="text" onfocus="handleFocus()" /></td>
+      </tr>
+      <tr>
+        <td>blur</td>
+        <td><input type="text" onblur="handleBlur()" /></td>
+      </tr>
+      <tr>
+        <td>change</td>
+        <td><input type="text" onchange="handleChange()" /></td>
+      </tr>
+      <tr>
+        <td>load</td>
+        <td><body onload="handleLoad()"></body></td>
+      </tr>
+      <tr>
+        <td>resize</td>
+        <td><div onresize="handleResize()">Haz clic aquí</div></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Explicación de los Eventos:</h2>
+  <ul>
+    <li><strong>click:</strong> Se activa cuando se hace clic en un elemento.</li>
+    <li><strong>mouseover:</strong> Se activa cuando el mouse pasa por encima de un elemento.</li>
+    <li><strong>keydown:</strong> Se activa cuando se presiona una tecla en un campo de texto.</li>
+    <li><strong>keyup:</strong> Se activa cuando se suelta una tecla en un campo de texto.</li>
+    <li><strong>submit:</strong> Se activa cuando se envía un formulario.</li>
+    <li><strong>focus:</strong> Se activa cuando un elemento recibe el foco.</li>
+    <li><strong>blur:</strong> Se activa cuando un elemento pierde el foco.</li>
+    <li><strong>change:</strong> Se activa cuando cambia el valor de un elemento.</li>
+    <li><strong>load:</strong> Se activa cuando la página se ha cargado completamente.</li>
+    <li><strong>resize:</strong> Se activa cuando se cambia el tamaño de la ventana del navegador.</li>
+  </ul>
+  <button class="semibold-textwe"><a href="index.html" data-toggle="flip"><i class="fa fa-angle-left fa-fw"></i> ir al inicio</a>
+</body>
+</html>
